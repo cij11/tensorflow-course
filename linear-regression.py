@@ -57,8 +57,11 @@ green_line = mpatches.Patch(color='red', label = 'Data Points')
 
 plt.legend(handles=[green_line])
 
-#Save output to file
-fig = plt.figure()
-fig.savefig("linear-regression.png")
-plt.close(fig)
+##Save output to file
+#fig = plt.figure()
+#fig.savefig("linear-regression.png")
+#plt.close(fig)
+
 #plt.show()
+
+plt.savefig('linear-regression2.png')
