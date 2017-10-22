@@ -35,7 +35,7 @@ sess = tf.Session()
 sess.run(init)
 
 train_data = []
-for step in range(1000):
+for step in range(100):
 	evals = sess.run([train, a, b])[1:]
 	print(step, evals)
 	train_data.append(evals)
@@ -57,5 +57,8 @@ green_line = mpatches.Patch(color='red', label = 'Data Points')
 
 plt.legend(handles=[green_line])
 
-plt.show()
-
+#Save output to file
+fig = plt.figure()
+fig.savefig("linear-regression.png")
+plt.close(fig)
+#plt.show()
