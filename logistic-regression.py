@@ -13,7 +13,8 @@
 
 import tensorflow as tf
 import numpy as np
-import pandas as import pdb; pdb.set_trace()import time
+import pandas as pd
+import time
 
 from sklearn.datasets import load_iris
 from sklearn.cross_validation import train_test_split
